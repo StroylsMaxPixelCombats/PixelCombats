@@ -31,41 +31,36 @@ Build.GetContext().LoadMapEnable.Value = true;
 Build.GetContext().ChangeSpawnsEnable.Value = true;
 Build.GetContext().BuildRangeEnable.Value = true;
 
-// Запоет, нанесение урона 
+// Запрет, нанесение урона 
 Damage.GetContext().DamageOut.Value = false;
 
-// 
+// Настройка, игрового режима  
 Properties.GetContext().GameModeName.Value = "GameModes/EDITOR";
-// создаем команды
-red = GameMode.Parameters.GetBool("RedTeam");
-blue = GameMode.Parameters.GetBool("BlueTeam");
-if (red || !red && !blue) {
-	Teams.Add("Red", "Teams/Red", { r: 1 });
-	Teams.Get("Red").Spawns.SpawnPointsGroups.Add(2);
+// Создаём, команды
+if (GameMode.Parameters.GetBool("RedTeam")) {
+Teams.Add("Red", "Teams/Red", new Color(1, 0, 0, 0));
+Teams.Get("Red").Spawns.SpawnPointsGroups.Add(1);
+if (GameMode.Parameters.GetBool("BlueTeam")) {
+Teams.Add("Blue", "Teams/Blue", new Color(0, 0, 1, 0));
+Teams.Get("Blue").Spawns.SpawnPointsGroups.Add(2);
+   }
 }
-if (blue || !red && !blue) {
-	Teams.Add("Blue", "Teams/Blue", { b: 1 });
-	Teams.Get("Blue").Spawns.SpawnPointsGroups.Add(1);
-}
-
-// разрешаем вход в команды по запросу
+// Разрешаем, входить в команды
 Teams.OnRequestJoinTeam.Add(function(player,team){team.Add(player);});
-// спавн по входу в команду
+// Разрешаем, спавн после входа в команду
 Teams.OnPlayerChangeTeam.Add(function(player){ player.Spawns.Spawn()});
 
-// задаем подсказку
-Ui.getContext().Hint.Value = "Hint/BuildBase";
+// Задаём, подсказку
+Ui.GetContext().Hint.Value = "!Редактируйте, карту!";
 
-// конфигурация инвентаря
-var roomInventory = Inventory.GetContext();
-roomInventory.Main.Value = false;
-roomInventory.Secondary.Value = false;
-roomInventory.Melee.Value = true;
-roomInventory.Explosive.Value = false;
-roomInventory.Build.Value = true;
-roomInventory.BuildInfinity.Value = true;
+// Настройка, инвентаря игрока
+var Inventory = Inventory.GetContext();
+Inventory.Main.Value = false;
+Inventory.Secondary.Value = false;
+Inventory.Melee.Value = true;
+Inventory.Explosive.Value = false;
+Inventory.Build.Value = true;
+Inventory.BuildInfinity.Value = true;
 
-// моментальный спавн
+// Моментальный спавн, игрокам
 Spawns.GetContext().RespawnTime.Value = 0;
-
-
