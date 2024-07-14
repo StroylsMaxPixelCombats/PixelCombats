@@ -1,6 +1,6 @@
 //var System = importNamespace(system);
 import { Color } from 'pixel_combats/basic';
-import { Game, GameMode, Inventory, Build, BuildBlocksSet, Properties, Teams, Damage, BreackGraph, Spawns, Ui } from 'pixel_combats/room'; 
+import { GameMode, Inventory, Build, BuildBlocksSet, Properties, Teams, Damage, BreackGraph, Spawns, Ui } from 'pixel_combats/room'; 
 
 // Игровые, параметры 
 Damage.GetContext().DamageOut.Value = GameMode.Parameters.GetBool("Damage");
