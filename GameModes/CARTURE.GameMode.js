@@ -1,5 +1,5 @@
 //var System = importNamespace('System');
-import { DisplayValueHeader, Color } from 'pixel_combats
+import { DisplayValueHeader, Color } from 'pixel_combats';
 import { Game, GameMode, Inventory, Spawns, LeaderBoard, Properties, Damage, BreackGraph, Teams, Ui, AreaPlayerTriggerService, AreaViewService } from 'pixel_combats/room';
 
 // Константы
