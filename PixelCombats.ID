@@ -9,7 +9,7 @@
 "BlueTeam.ContextedProperties.SkinType.Value = 3;"
 - А эти строки, делают скины по командам, то есть если зайдёт каждый игрок в команду он получит скин
 ID скина синего: 3;
-SKIN– 4:
+–SKIN– 4:
 - Начнём, как сделать скин красного?
 - введите эту, команду:
 "Player.ContextedProperties.SkinType.Value = 4;"
