@@ -1,1 +1,32 @@
-
+{
+  "Name": "ЗАХВАТ",
+  "Description": "Захватывайте и защищайте зоны чтобы получить приемущество в противоборстве двух команд",
+  "StartClientVersion": 334,
+  "MapLists": [
+    {
+      "MapListId": 324,
+      "Name": "Официальные карты"
+    }
+  ],
+  "Parameters": {
+    "Bool": [
+      {
+        "Name": "MapRotation",
+        "DisplayName": "СМЕНА КАРТ",
+        "Default": true
+      },
+      {
+        "Name": "FriendlyFire",
+        "DisplayName": "ОГОНЬ ПО СВОИМ"
+      },
+      {
+        "Name": "LoosenBlocks",
+        "DisplayName": "СЛАБЫЕ БЛОКИ"
+      },
+      {
+        "Name": "PartialDesruction",
+        "DisplayName": "ЧАСТИЧНОЕ РАЗРУШЕНИЕ"
+      }
+    ]
+  }
+}
