@@ -49,10 +49,62 @@ gamemode.json
 gamemode.js
 ——————————————
 - Вы должны зайти в "client/room" и там будет "gamemode.js" и туда код и импорты api
-- И зайдите в "gamemode.json" этот файл работает как обложка режима, если у вас его нету, то покажем образец 
-
-
-
+- И зайдите в "gamemode.json" этот файл работает как обложка режима, если у вас его нету, то покажем образец
+———
+{
+  "Name": "НАЗВАНИЕ",
+  "Description": "ОПИСАНИЕ",
+  "StartClientVersion": 334,
+  "MapFilter": {
+    "IsBlank": false,
+    "HasParcourEnd": false
+  },
+  "MapLists": [
+    {
+      "MapListId": ID СПИСОК КАРТ,
+      "Name": "НАЗВАНИЕ СПИСОК КАРТ"
+    },
+    {
+      "MapListId": 581
+    }
+  ],
+  "Parameters": {
+    "Bool": [
+      {
+        "Name": "НАЗВАНИЕ",
+        "DisplayName": "ОПИСАНИЕ",
+        "Default": true/false
+      },
+      {
+        "Name": "НАЗВАНИЕ",
+        "DisplayName": "ОПИСАНИЕ"
+        "Default": true/false
+      },
+      {
+        "Name": "НАЗВАНИЕ",
+        "DisplayName": "ОПИСАНИЕ"
+      },
+      {
+        "Name": "НАЗВАНИЕ",
+        "DisplayName": "ОПИСАНИЕ"
+      },
+      {
+        "Name": "НАЗВАНИЕ",
+        "DisplayName": "ОПИСАНИЕ"
+          }
+        ]
+      }
+    }
+———
+- Переделайте, как хотите параметр, но "Default" - оно автоматически делает галочку но для этого, надо вписать "true" и тогда она будет, если не хотите галочку то "false" либо если вообще не хотите эту строку то уберите её <"Default": true/false>
+- В "НАЗВАНИЕ" - сюда запишите то что, ты написал в GameMode, образец:
+—
+if (GameMode.Parameters.GetBool("НАЗВАНИЕ")) {
+BreackGraph.OnlyPlayerBlocksDmg.Value = true;
+—
+Damage.GetContext().DamageOut.Value = GameMode.Parameters.GetBool("НАЗВАНИЕ);
+}
+—
 
 
 
