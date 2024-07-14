@@ -5,7 +5,7 @@ import { Game, GameMode, Inventory, Spawns, LeaderBoard, Properties, Damage, Bre
 // Константы
 var WaitingPlayersTime = 10;
 var BuildBaseTime = 60;
-var GameModeTime = 300;
+var GameModeTime = default_timer.game_mode_length_seconds();
 var DefPoints = GameModeTime * 0.2;
 var EndOfMatchTime = 10;
 var DefPointsMaxCount = 30;
