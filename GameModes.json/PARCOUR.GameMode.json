@@ -1,1 +1,32 @@
-
+{
+  "Name": "ПАРКУР",
+  "Description": "Паркур с точками сохранения кто первый прошел тот и выиграл",
+  "StartClientVersion": 533,
+  "MapFilter": {
+    "HasParcourEnd": true
+  },
+  "MapLists": [
+    {
+      "MapListId": 324
+    }
+  ],
+  "Parameters": {
+    "Bool": [
+      {
+        "Name": "ViewEnd",
+        "DisplayName": "ОТОБРАЖАТЬ ЦВЕТ ЗОНЫ КОНЦА ПАРКУРА",
+        "Default": true
+      },
+      {
+        "Name": "ViewSpawns",
+        "DisplayName": "ОТОБРАЖАТЬ ЦВЕТ ЗОНЫ СОХРАНЕНИЯ",
+        "Default": true
+      },
+      {
+        "Name": "MapRotation",
+        "DisplayName": "СМЕНА КАРТ",
+        "Default": true
+      }
+    ]
+  }
+}
