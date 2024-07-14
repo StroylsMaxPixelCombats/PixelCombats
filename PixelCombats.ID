@@ -1,1 +1,39 @@
+// Библиотека, созданная как ID всего
+- Мы начинаем со скинов, это 1 ЭТАП
+–SKIN– 3:
+- Начнём, как сделать скин синего?
+- введите эту, команду:
+"Player.ContextedProperties.SkinType.Value = 3;"
+Эта строка, позволяет делать скин, персонажу можно себе так и всем 
+"RedTeam.ContextedProperties.SkinType.Value = 3;"
+"BlueTeam.ContextedProperties.SkinType.Value = 3;"
+- А эти строки, делают скины по командам, то есть если зайдёт каждый игрок в команду он получит скин
+ID скина синего: 3;
+SKIN– 4:
+- Начнём, как сделать скин красного?
+- введите эту, команду:
+"Player.ContextedProperties.SkinType.Value = 4;"
+Эта строка, позволяет делать скин, персонажу можно себе так и всем 
+"RedTeam.ContextedProperties.SkinType.Value = 4;"
+"BlueTeam.ContextedProperties.SkinType.Value = 4;"
+- А эти строки, делают скины по командам, то есть если зайдёт каждый игрок в команду он получит скин
+ID скина красного: 4;
+–SKIN– 2:
+- Начнём, как сделать скин зека/заключенного/тюремщика?
+- введите эту, команду:
+"Player.ContextedProperties.SkinType.Value = 2;"
+Эта строка, позволяет делать скин, персонажу можно себе так и всем 
+"BlueTeam.GetContextedProperties.SkinType.Value = 2;"
+"RedTeam.GetContextedProperties.SkinType.Value = 2;"
+- А эти строки, делают скины по командам, то есть если зайдёт каждый игрок в команду он получит скин
+ID скина зека/тюремщика/заключеного: 2;
+—SKIN– 1:
+- Начнём, как сделать скин зомби?
+- введите эту, команду:
+"Player.ContextedProperties.SkinType.Value = 1;"
+Эта строка, позволяет делать скин, персонажу можно себе так и всем 
+"BlueTeam.GetContextedProperties.SkinType.Value = 1;"
+"RedTeam.GetContextedProperties.SkinType.Value = 1;"
+- А эти строки, делают скины по командам, то есть если зайдёт каждый игрок в команду он получит скин
+ID скина зомби: 1;
 
