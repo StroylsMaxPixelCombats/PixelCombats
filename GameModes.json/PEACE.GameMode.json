@@ -1,1 +1,59 @@
-
+{
+  "Name": "МИР",
+  "Description": "Мирный режим",
+  "StartClientVersion": 532,
+  "ApiVersion": 2,
+  "MapLists": [
+    {
+      "MapListId": 324,
+      "Name": "Официальные карты"
+    }
+  ],
+  "Parameters": {
+    "Bool": [
+      {
+        "Name": "Damage",
+        "DisplayName": "УРОН"
+      },
+      {
+        "Name": "PartialDesruction",
+        "DisplayName": "ЧАСТИЧНОЕ РАЗРУШЕНИЕ"
+      },
+      {
+        "Name": "LoosenBlocks",
+        "DisplayName": "СЛАБЫЕ БЛОКИ"
+      },
+      {
+        "Name": "RedTeam",
+        "DisplayName": "КОМАНДА КРАСНАЯ",
+        "Default": true
+      },
+      {
+        "Name": "BlueTeam",
+        "DisplayName": "КОМАНДА СИНИЯ",
+        "Default": true
+      },
+      {
+        "Name": "BlueHasNothing",
+        "DisplayName": "ПУСТОЙ ИНВЕНТАРЬ КОМАНДЫ СИНИЕ"
+      },
+      {
+        "Name": "FloodFill",
+        "DisplayName": "ЗАЛИВКА БЛОКОВ"
+      },
+      {
+        "Name": "FillQuad",
+        "DisplayName": "ПОЛНАЯ ЗАЛИВКА БЛОКОВ"
+      },
+      {
+        "Name": "RemoveQuad",
+        "DisplayName": "УДАЛЕНИЕ БЛОКОВ"
+      },
+      {
+        "Name": "Fly",
+        "DisplayName": "ПАЛЁТ",
+        "Default": true
+      }
+    ]
+  }
+}
