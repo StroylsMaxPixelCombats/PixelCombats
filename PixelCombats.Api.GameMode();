@@ -1,8 +1,12 @@
 // Библиотека, созданная что бы узнать как делатся api 2.0 для своих режимов
 
+———— function №1
+
 // Работы, с api 2.0
 import - ["Импорт"];
-// Цель
+Color - ["Цвет"];
+DisplayValueHeader - ["ДисИгрокЗначениеЗагаловок"];
+- Api, с которым работает импорт
 Inventory - ["Инвентарь"];
 Players - ["Игроки"];
 GameMode - ["Игровой режим"];
@@ -21,6 +25,32 @@ TeamsBalancer - ["Блансировщик команд"];
 NewGame - ["Новая игра"];
 NewGameVote - ["Обсуждение новой игры"];
 AreaPlayerTriggerService - ["ОбластьИгрокТриггерСервисе"];
+AreaViewService - ["ОбластьСмотретьСервисе"];
+// Выбранные вами то что вам нужно для кода, делаем импорты
+- Это на примере, как сделать api, и это нада сделать также у вас в коде в gamemode.js 
+import { DisplayValueHeader, Color } from 'pixel_combats/basic';
+import { Inventory, Players, GameMode, Game, Build, Ui, Properties, Teams, Damage, BreackGraph, Timers, Spawns, LeaderBoard, BuildBlocksSet, TeamsBalancer, NewGame, NewGameVote, AreaPlayerTriggerService, AreaViewService } from 'pixel_combats/room';
+// "DisplayValueHeader" - это лидерБорд, если у вас в коде его нету, то лучше уберите его и оставьте только "Color"
+- И из выброного, вы можете взять то что не пригодится у вас в коде, удалить лишние и оставить то что хотите оставить в импорте !Если в импорте есть лишние, то уберите лишние а то он не сработает!
+- Это может быть что-то новое, или то что неподходит под код
+
+——— function №2
+// Ещё, что бы сделать api, нада создать файлы новые:
+"client/room/gamemode.js" - 1
+"gamemode.json" - 2
+- Создайте, сначала 1 заголовок, патом 2 в 1 заголовок туда закиньте импорты и сам код режима
+- А в 2 заголовке киньте параметры, которые работают как обложка режима 
+- И у вас должно быть так с файлами:
+———————————————
+client/room
+gamemode.json
+———————————————
+———————————————
+gamemode.js
+——————————————
+- Вы должны зайти в "client/room" и там будет "gamemode.js" и туда код и импорты api
+- И зайдите в "gamemode.json" этот файл работает как обложка режима, если у вас его нету, то покажем образец 
+
 
 
 
