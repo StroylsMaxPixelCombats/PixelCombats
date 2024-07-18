@@ -49,7 +49,13 @@ b = B.Team.Color();
 1 = b;
 b.Team.Blue;
 b.TeamColor = Team.Get("Blue");
-
-
-
-
+// Color = color.GetContext();
+Color.Red = R.GetContext();
+R = 1;
+R: 1;
+({ R: 1 });
+({ r: 1 });
+r = R.Team.Color();
+1 = r;
+r.Teams.Red;
+r.TeamColor = Team.Get("Red");
