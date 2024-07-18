@@ -12,4 +12,3 @@ RedTeam.Inventory.Melee.Value = true;
 Player.("ID").Inventory.Melee.Value = true;
 Player.("ID").Inventory.Melee.Value = false;
 {"Melee"}
-{"MeleeInfinity"};
