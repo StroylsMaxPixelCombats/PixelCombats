@@ -1,0 +1,60 @@
+{
+  "Name": "<b><color=Lime>ЗОМБИ</a></b>",
+  "Description": "2 команды, борются за господство и власть!",
+  "StartClientVersion": 334,
+  "MapFilter": {
+    "IsBlank": false,
+    "HasParcourEnd": false
+  },
+  "MapLists": [
+    {
+      "MapListId": 324,
+      "Name": "Официальные карты"
+    },
+    {
+      "MapListId": 581
+    }
+  ],
+  "Parameters": {
+    "Bool": [
+      {
+        "Name": "MapRotation",
+        "DisplayName": "СМЕНА КАРТ",
+        "Default": true
+      },
+      {
+        "Name": "PartialDesruction",
+        "DisplayName": "ЛОМАЮТСЯ ТОЛЬКО БЛОКИ ИГРОКОВ"
+      },
+      {
+        "Name": "LoosenBlocks",
+        "DisplayName": "СЛАБЫЕ БЛОКИ"
+      },
+      {
+        "Name": "FriendlyFire",
+        "DisplayName": "УРОН ПО СВОИМ"
+      }
+    ],
+    "Dropdown": [
+      {
+        "Name": "default_game_mode_length",
+        "DisplayName": "ДЛИННА МАТЧА",
+        "Default": "Length_КОРОТКАЯ",
+        "Variants": [
+          {
+            "Name": "Length_КОРОТКАЯ",
+            "DisplayName": "КОРОТКАЯ"
+          },
+          {
+            "Name": "Length_СРЕДНЯЯ",
+            "DisplayName": "СРЕДНЯЯ"
+          },
+          {
+            "Name": "Length_ДЛИННАЯ",
+            "DisplayName": "ДЛИННАЯ"
+          }
+        ]
+      }
+    ]
+  }
+}
