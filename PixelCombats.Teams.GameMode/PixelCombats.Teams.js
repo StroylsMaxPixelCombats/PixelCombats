@@ -1,12 +1,12 @@
 // Библиотека, созданная как по КОМАНДАМ, для режима
 
 //Новые, команды:
-const  BlueTeam  =  Команды.create_Team_Blue ( ) ;​​
+const  BlueTeam  = Teams.create_Team_Blue ( ) ;​​
 const  RedTeam  =  Teams.create_Team_Red ( ) ;​​
 BlueTeam.Build.BlocksSet.Value = BuildBlocksSet.Blue ;​​​​​​​​  
 RedTeam.Build.BlocksSet.Value = BuildBlocksSet.Red ;​​​​​​​​  
 // Новые, лидерБорды:
-LeaderBoard . PlayerLeaderBoardValues  ​​=  [
+LeaderBoard.PlayerLeaderBoardValues  ​​=  [
 	new DisplayValueHeader ( KILLS_PROP_NAME ,  "Статистика/Убийства" ,  "Статистика/УбийстваShort" ) ,
 	new DisplayValueHeader ( "Смерти" ,  "Статистика/Смерти" ,  "Статистика/СмертиКраткая" ) ,
 	new DisplayValueHeader ( "Spawns" ,  "Statistics/Spawns" ,  "Statistics/SpawnsShort" ) ,
@@ -14,8 +14,8 @@ LeaderBoard . PlayerLeaderBoardValues  ​​=  [
 ] ;
 // Конст = var.GetContext();
 [ "Const" ]  -  "Константа" ;
-[ "Вар" ]  -  "Вар" ;
-
+[ "Var" ]  -  "Вар" ;
+[ "Let" ] - "Лэт";
 
 // Команды, в другом файле 
 // Библиотека, созданная как КОМАНДЫ
